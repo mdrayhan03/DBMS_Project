@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <!-- Boostrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!----css3---->
+  <link rel="stylesheet" href="../css/custom.css" />
+  <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+
+  <!--google material icon-->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <!-- CustomStyle css -->
+  <link rel="stylesheet" href="css/Specialist.css">
+
+  <style>
+    .ratings {
+      margin-right: 10px;
+    }
+
+    .ratings i {
+
+      color: #cecece;
+      font-size: 32px;
+    }
+
+    .rating-color {
+      color: #fbc634 !important;
+    }
+
+    .review-count {
+      font-weight: 400;
+      margin-bottom: 2px;
+      font-size: 24px !important;
+    }
+
+    .small-ratings i {
+      color: #cecece;
+    }
+
+    .review-stat {
+      font-weight: 300;
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+
+    .progress {
+      height: 25px;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      transition: width 0.4s ease;
+    }
+
+    .card-title {
+      margin-bottom: 1rem;
+    }
+
+    .metrics-item {
+      margin-bottom: 1rem;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="body-overlay"></div>
+
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div class="sidebar-header d-flex flex-column align-items-center">
+        <h3 class="text-center">
+          <img src="../img/logo.png" class="img-fluid" style="width: 60px;" />
+          <span>MHM System</span>
+        </h3>
+      </div>
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#" class="dashboard">
+            <i class="material-icons">dashboard</i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+
+        <div class="small-screen navbar-display">
+          <li class="dropdown d-lg-none d-md-block d-xl-none d-sm-block">
+            <a href="#homeSubmenu0" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+              <i class="material-icons">notifications</i>
+              <span> 4 notification</span>
+            </a>
+            <ul class="collapse list-unstyled menu" id="homeSubmenu0">
+              <li>
+                <a href="#">You have 5 new messages</a>
+              </li>
+              <li>
+                <a href="#">You're now friend with Mike</a>
+              </li>
+              <li>
+                <a href="#">Wish Mary on her birthday!</a>
+              </li>
+              <li>
+                <a href="#">5 warnings in Server Console</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+            <a href="#">
+              <i class="material-icons">apps</i>
+              <span>apps</span>
+            </a>
+          </li>
+
+          <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+            <a href="#">
+              <i class="material-icons">person</i>
+              <span>user</span>
+            </a>
+          </li>
+
+          <li class="d-lg-none d-md-block d-xl-none d-sm-block">
+            <a href="#">
+              <i class="material-icons">settings</i>
+              <span>setting</span>
+            </a>
+          </li>
+        </div>
+
+        <li class="dropdown">
+          <a href="#homeSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="material-icons">personal_injury</i>
+            <span>Patient</span>
+          </a>
+          <ul class="collapse list-unstyled menu" id="homeSubmenu1">
+            <li>
+              <a href="/Patient/Patient-Appoinment.html"><i class="material-icons">arrow_right</i> Appointment</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">arrow_right</i> Medication</a>
+            </li>
+            <li>
+              <a href="Patient/Patient-HR.html"><i class="material-icons">arrow_right</i> Health Records</a>
+            </li>
+            <li>
+              <a href="Common/Resources-List.html"><i class="material-icons">arrow_right</i> Educational Resources</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">arrow_right</i> Recommendations</a>
+            </li>
+            <li>
+              <a href="Common/Patient-Data.html"><i class="material-icons">arrow_right</i> Patient List</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="material-icons">medication</i>
+            <span>Specialist</span>
+          </a>
+          <ul class="collapse list-unstyled menu" id="pageSubmenu2">
+            <li>
+              <a href="Specialist/Specialist-List.html"><i class="material-icons">arrow_right</i> Specialist List</a>
+            </li>
+            <li>
+              <a href="Common/Patient-Data.html"><i class="material-icons">arrow_right</i> View Patient Info</a>
+            </li>
+            <li>
+              <a href="Common/Doctor-Appointment.html"><i class="material-icons">arrow_right</i> Appointments</a>
+            </li>
+            <li>
+              <a href="Common/Resources-List.html"><i class="material-icons">arrow_right</i> Resources and Tools</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="material-icons">group</i>
+            <span>Councelor</span>
+          </a>
+          <ul class="collapse list-unstyled menu" id="pageSubmenu3">
+            <li>
+              <a href="Councelor/Councelor-List.html"><i class="material-icons">arrow_right</i> Councelor List</a>
+            </li>
+            <li>
+              <a href="Common/Patient-Data.html"><i class="material-icons">arrow_right</i> View Patient Info</a>
+            </li>
+            <li>
+              <a href="Common/Doctor-Appointment.html"><i class="material-icons">arrow_right</i> Appointments</a>
+            </li>
+            <li>
+              <a href="Common/Resources-List.html"><i class="material-icons">arrow_right</i> Resources and Tools</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#pageSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="material-icons">corporate_fare</i>
+            <span>Organization</span>
+          </a>
+          <ul class="collapse list-unstyled menu" id="pageSubmenu4">
+            <li>
+              <a href="Organization/Organization-Event.html"><i class="material-icons">arrow_right</i> Events</a>
+            </li>
+            <li>
+              <a href="Common/Resource.html"><i class="material-icons">arrow_right</i> Resources</a>
+            </li>
+            <li>
+              <a href="Organization/Create-Event.html"><i class="material-icons">arrow_right</i> Create Event</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#pageSubmenu5" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="material-icons">reviews</i>
+            <span>Reviews</span>
+          </a>
+          <ul class="collapse list-unstyled menu" id="pageSubmenu5">
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#pageSubmenu6" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+            <i class="material-icons">query_stats</i>
+            <span>Chart</span>
+          </a>
+          <ul class="collapse list-unstyled menu" id="pageSubmenu6">
+            <li>
+              <a href="#"><i class="material-icons">arrow_right</i> Chart 1</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">arrow_right</i> Chart 2</a>
+            </li>
+            <li>
+              <a href="#"><i class="material-icons">arrow_right</i> Chart 3</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="">
+          <a href="Common/Schedule.html"><i class="material-icons">library_books</i><span>Schedule</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- Page Content  -->
+    <div id="content">
+      <div class="top-navbar">
+        <nav class="navbar dashboardbg navbar-expand-lg">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
+              <span class="material-icons">arrow_back_ios</span>
+            </button>
+
+            <a class="navbar-brand" href="#"> Dashboard </a>
+
+            <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="material-icons">more_vert</span>
+            </button>
+
+            <div class="collapse navbar-collapse d-lg-block d-xl-block d-sm-none d-md-none d-none"
+              id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="dropdown nav-item active">
+                  <a href="#" class="nav-link" data-toggle="dropdown">
+                    <span class="material-icons">notifications</span>
+                    <span class="notification">4</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="#">You have 5 new messages</a>
+                    </li>
+                    <li>
+                      <a href="#">You're now friend with Mike</a>
+                    </li>
+                    <li>
+                      <a href="#">Wish Mary on her birthday!</a>
+                    </li>
+                    <li>
+                      <a href="#">5 warnings in Server Console</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="material-icons">apps</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="material-icons">person</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">
+                    <span class="material-icons">settings</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Home Section -->
+      <div class="main-content" style="min-height: 100vh;">
+        <!-- Start home content -->
+        <div class="height-100 container d-flex justify-content-center align-items-center">
+          <div class="card p-3">
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5 class="review-count">12 Reviews</h5>
+            </div>
+
+
+            <div class="mt-5 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Medical Expertise</h5>
+              <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+
+            </div>
+
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Bedside Manner</h5>
+              <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Communication</h5>
+              <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Staff Friendliness</h5>
+              <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+              </div>
+            </div>
+
+
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Office Environment</h5>
+              <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+
+            <div class="mt-1 d-flex justify-content-between align-items-center">
+              <h5 class="review-stat">Wait Time</h5>
+              <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container my-5">
+          <h2 class="mb-4">Feedback Analytics</h2>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Average Ratings</h5>
+                  <div class="metrics-item">
+                    <h6>Overall Experience</h6>
+                    <div class="progress">
+                      <div id="avgOverallExperience" class="progress-bar bg-success" role="progressbar"
+                        style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="5">0</div>
+                    </div>
+                  </div>
+                  <div class="metrics-item">
+                    <h6>Medical Expertise</h6>
+                    <div class="progress">
+                      <div id="avgMedicalExpertise" class="progress-bar bg-info" role="progressbar" style="width: 0%;"
+                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="5">0</div>
+                    </div>
+                  </div>
+                  <div class="metrics-item">
+                    <h6>Bedside Manner</h6>
+                    <div class="progress">
+                      <div id="avgBedsideManner" class="progress-bar bg-warning" role="progressbar" style="width: 0%;"
+                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="5">0</div>
+                    </div>
+                  </div>
+                  <div class="metrics-item">
+                    <h6>Communication</h6>
+                    <div class="progress">
+                      <div id="avgCommunication" class="progress-bar bg-danger" role="progressbar" style="width: 0%;"
+                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="5">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Total Reviews</h5>
+                  <p id="totalReviews" class="card-text">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="my-4">Recent Reviews</h2>
+          <div id="reviewsList" class="list-group mb-4">
+            <!-- Reviews will be appended here -->
+          </div>
+        </div>
+        <!-- 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+
+        <!-- End home content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Apex Chart -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.49.1/apexcharts.min.js"
+    integrity="sha512-qiVW4rNFHFQm0jHli5vkdEwP4GPSzCSp85J7JRHdgzuuaTg31tTMC8+AHdEC5cmyMFDByX639todnt6cxEc1lQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="./js/myscript.js"></script>
+  <script>
+    const reviews = [10, 20, 30, 40, 50];
+
+    // Function to update feedback analytics
+    function updateFeedbackAnalytics() {
+      const totalReviews = reviews.length;
+
+      if (totalReviews > 0) {
+        // Calculate average ratings
+        const avgOverallExperience = reviews.reduce((sum, review) => sum + review.overallExperience, 0) / totalReviews;
+        const avgMedicalExpertise = reviews.reduce((sum, review) => sum + review.medicalExpertise, 0) / totalReviews;
+        const avgBedsideManner = reviews.reduce((sum, review) => sum + review.bedsideManner, 0) / totalReviews;
+        const avgCommunication = reviews.reduce((sum, review) => sum + review.communication, 0) / totalReviews;
+
+        // Update progress bars
+        document.getElementById('avgOverallExperience').style.width = (avgOverallExperience / 5 * 100) + '%';
+        document.getElementById('avgOverallExperience').textContent = avgOverallExperience.toFixed(1);
+        document.getElementById('avgOverallExperience').setAttribute('aria-valuenow', avgOverallExperience);
+
+        document.getElementById('avgMedicalExpertise').style.width = (avgMedicalExpertise / 5 * 100) + '%';
+        document.getElementById('avgMedicalExpertise').textContent = avgMedicalExpertise.toFixed(1);
+        document.getElementById('avgMedicalExpertise').setAttribute('aria-valuenow', avgMedicalExpertise);
+
+        document.getElementById('avgBedsideManner').style.width = (avgBedsideManner / 5 * 100) + '%';
+        document.getElementById('avgBedsideManner').textContent = avgBedsideManner.toFixed(1);
+        document.getElementById('avgBedsideManner').setAttribute('aria-valuenow', avgBedsideManner);
+
+        document.getElementById('avgCommunication').style.width = (avgCommunication / 5 * 100) + '%';
+        document.getElementById('avgCommunication').textContent = avgCommunication.toFixed(1);
+        document.getElementById('avgCommunication').setAttribute('aria-valuenow', avgCommunication);
+      } else {
+        // Reset progress bars if there are no reviews
+        document.getElementById('avgOverallExperience').style.width = '0%';
+        document.getElementById('avgOverallExperience').textContent = '0';
+
+        document.getElementById('avgMedicalExpertise').style.width = '0%';
+        document.getElementById('avgMedicalExpertise').textContent = '0';
+
+        document.getElementById('avgBedsideManner').style.width = '0%';
+        document.getElementById('avgBedsideManner').textContent = '0';
+
+        document.getElementById('avgCommunication').style.width = '0%';
+        document.getElementById('avgCommunication').textContent = '0';
+      }
+
+      // Update total reviews count
+      document.getElementById('totalReviews').textContent = totalReviews;
+    }
+
+    // Function to handle form submission
+    document.getElementById('reviewForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const overallExperience = parseInt(document.getElementById('overallExperience').value);
+      const medicalExpertise = parseInt(document.getElementById('medicalExpertise').value);
+      const bedsideManner = parseInt(document.getElementById('bedsideManner').value);
+      const communication = parseInt(document.getElementById('communication').value);
+      const comments = document.getElementById('comments').value;
+
+      // Create a new review object
+      const review = {
+        name: name,
+        overallExperience: overallExperience,
+        medicalExpertise: medicalExpertise,
+        bedsideManner: bedsideManner,
+        communication: communication,
+        comments: comments
+      };
+
+      // Add the review to the reviews array
+      reviews.push(review);
+
+      // Create a new review item
+      const reviewItem = document.createElement('div');
+      reviewItem.className = 'list-group-item list-group-item-action flex-column align-items-start review-item';
+      reviewItem.innerHTML = `
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">${name}</h5>
+                <small class="text-muted">Overall Experience: ${overallExperience} stars</small>
+            </div>
+            <p class="mb-1"><strong>Medical Expertise:</strong> ${medicalExpertise} stars</p>
+            <p class="mb-1"><strong>Bedside Manner:</strong> ${bedsideManner} stars</p>
+            <p class="mb-1"><strong>Communication:</strong> ${communication} stars</p>
+            <p class="mb-1"><strong>Comments:</strong> ${comments}</p>
+        `;
+
+      // Append the new review item to the reviews list
+      document.getElementById('reviewsList').appendChild(reviewItem);
+
+      // Update feedback analytics
+      updateFeedbackAnalytics();
+
+      // Clear the form
+      document.getElementById('reviewForm').reset();
+    });
+  </script>
+</body>
+
+</html>
